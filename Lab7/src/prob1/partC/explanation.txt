@@ -1,0 +1,2 @@
+- The problem here is that hashCode has not been overridden. When the HashMap tries to use Employee objects as keys it is using Hash method of the Object class which is useless.
+- Hence by overiding the hashCode of Employee we can alleviate the problem

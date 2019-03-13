@@ -1,0 +1,2 @@
+- The problem here is that an intermediary state holding attribute "visited" is being used in hashCode and equals method overrides. This creates an inconsistent object and troubles
+equal and hashCode methods.

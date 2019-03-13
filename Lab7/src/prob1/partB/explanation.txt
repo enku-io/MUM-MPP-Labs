@@ -1,0 +1,1 @@
+- The problem here is that equals method of Object class has not been properly overridden. The method's signature expects arguement of Object type.
