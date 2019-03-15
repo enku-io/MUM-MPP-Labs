@@ -11,7 +11,5 @@ public class prob3 {
         fruits.stream().forEach((x)->System.out.println(x));
         //b
         fruits.stream().forEach(System.out::println);
-
-
     }
 }

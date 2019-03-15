@@ -6,8 +6,8 @@ import java.util.stream.Stream;
 public class prob2 {
     public static void main(String[] args) {
 
-//        firstProblem();
-//        secondProblem();
+        firstProblem();
+        secondProblem();
         thirdProblem();
 
     }
