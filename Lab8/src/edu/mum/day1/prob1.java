@@ -1,4 +1,4 @@
-package edu.mum;
+package edu.mum.day1;
 
 import java.util.ArrayList;
 import java.util.List;

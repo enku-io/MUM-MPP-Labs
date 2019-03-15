@@ -1,9 +1,6 @@
-package edu.mum.prob2.b;
+package edu.mum.day1.prob2.a;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Product {
     final String title;
@@ -33,6 +30,7 @@ public class Product {
         List sortedList = Product.Sort(products);
         System.out.println(sortedList);
 
+
     }
 
     public String getTitle() {
@@ -59,14 +57,16 @@ public class Product {
     }
 
     public static List<Product> Sort(List<Product> productList) {
-        class ProductTitleComparator implements Comparator<Product> {
+        class ProductPriceComparator implements Comparator<Product> {
 
             @Override
             public int compare(Product o1, Product o2) {
-                return o1.title.compareTo(o2.title);
+                if (o1.price == o2.price) return 0;
+                else if (o1.price < o2.price) return -1;
+                else return 1;
             }
         }
-        Collections.sort(productList,new ProductTitleComparator());
+        Collections.sort(productList , new ProductPriceComparator());
         return productList;
     }
 }
